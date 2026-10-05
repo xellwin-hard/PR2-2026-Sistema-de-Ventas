@@ -10,7 +10,7 @@ de productos, inventario y ventas en pequeños y medianos negocios.
 - Colque Mita German Wilfredo
 - Pozo Teran Axel Erwin
 - García Limachi Paola Andrea
- - ANDREIA JARJURY
+ - Andreia Jarjury
 ## Tecnologías
 
 - C#
