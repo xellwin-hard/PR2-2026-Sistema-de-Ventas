@@ -7,10 +7,10 @@ de productos, inventario y ventas en pequeños y medianos negocios.
 
 ## Equipo
 
-- Colque Mita, German Wilfredo
-- Pozo Teran, Axel Erwin
-- García Limachi, Paola Andrea
-
+- Colque Mita German Wilfredo
+- Pozo Teran Axel Erwin
+- García Limachi Paola Andrea
+-ANDREIA JARJURY
 ## Tecnologías
 
 - C#
