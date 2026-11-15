@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Consultar la documentación del proyecto
+    url: https://github.com/xellwin-hard/PR2-2026-Sistema-de-Ventas/tree/main/docs
+    about: Revisa primero la documentación antes de abrir una incidencia.
