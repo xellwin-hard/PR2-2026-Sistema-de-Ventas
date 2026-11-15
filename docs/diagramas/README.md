@@ -1,9 +1,10 @@
-# Diagramas
+# Diagramas del sistema
 
-Agregar aquí los diagramas del sistema, por ejemplo:
-- Diagrama de casos de uso.
-- Diagrama de clases.
-- Diagrama entidad-relación.
-- Diagramas de actividades o secuencia.
+Los diagramas de esta carpeta describen la versión inicial de NexCode Sales.
 
-Cada diagrama debe incluir título, propósito y fecha de actualización. Solo incorporar diagramas que correspondan al diseño validado por el equipo.
+## Diagramas disponibles
+- [Casos de uso](casos-de-uso.md): actores y funciones principales.
+- [Flujo de venta](flujo-de-venta.md): pasos para registrar una venta y validar existencias.
+
+## Nota
+Los diagramas reflejan las funciones actualmente implementadas en la aplicación de consola. Si se aprueban nuevos módulos, deberán actualizarse.
