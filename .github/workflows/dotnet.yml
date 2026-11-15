@@ -1,4 +1,4 @@
-name: .NET build
+name: .NET build and test
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,8 +22,11 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      - name: Restaurar dependencias
+      - name: Restaurar aplicación
         run: dotnet restore ./src/NexCodeSales/NexCodeSales.csproj
 
-      - name: Compilar proyecto
+      - name: Compilar aplicación
         run: dotnet build ./src/NexCodeSales/NexCodeSales.csproj --configuration Release --no-restore
+
+      - name: Ejecutar pruebas automatizadas
+        run: dotnet test ./tests/NexCodeSales.Tests/NexCodeSales.Tests.csproj --configuration Release
