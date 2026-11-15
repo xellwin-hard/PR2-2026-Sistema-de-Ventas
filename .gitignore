@@ -33,4 +33,6 @@ secrets.json
 Thumbs.db
 Desktop.ini
 
-# Compressed backups (keep existing archive tracked until source is organized)
+# Compressed archives and backups
+*.rar
+*.zip
