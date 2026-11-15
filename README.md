@@ -75,6 +75,9 @@ dotnet run
 Los datos se guardan localmente en archivos JSON dentro de `src/NexCodeSales/data/`.
 
 ## Documentación
+Consulta el [índice de documentación](docs/README.md), que organiza los documentos técnicos, del equipo y de planificación.
+
+Documentos principales:
 - [Visión y alcance](docs/vision-y-alcance.md)
 - [Requisitos](docs/requisitos.md)
 - [Arquitectura](docs/arquitectura.md)
@@ -87,7 +90,7 @@ Los datos se guardan localmente en archivos JSON dentro de `src/NexCodeSales/dat
 - [Seguridad](SECURITY.md)
 
 ## Estado
-**Versión inicial en desarrollo.** Se implementó una aplicación de consola básica. Las pruebas formales, diagramas, Gantt y módulos adicionales deben agregarse y validarse por el equipo.
+**Versión inicial en desarrollo.** Se implementó una aplicación de consola básica. La compilación automatizada se verifica mediante GitHub Actions. Las pruebas formales, diagramas, Gantt y módulos adicionales deben agregarse y validarse por el equipo.
 
 ## Licencia
 Proyecto académico para fines educativos. La licencia formal queda pendiente de decisión del equipo.
