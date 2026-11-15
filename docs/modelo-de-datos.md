@@ -1,19 +1,25 @@
-# Modelo de datos
+# Modelo de datos de la versión inicial
 
-## Estado
-El modelo físico y el diagrama entidad-relación todavía no están disponibles para revisión en el repositorio.
+La aplicación inicial guarda dos colecciones en archivos JSON.
 
-## Entidades que podrían ser necesarias
-De acuerdo con las funciones descritas, el equipo debe analizar si el sistema requiere entidades para:
-- Usuario y rol.
-- Producto y categoría.
-- Inventario o movimiento de existencias.
-- Venta y detalle de venta.
-- Cliente.
-- Proveedor.
-- Promoción o preventa.
+## Producto
+- Id: identificador entero.
+- Name: nombre del producto.
+- Price: precio unitario decimal.
+- Stock: cantidad disponible entera.
 
-Esta lista es una propuesta inicial, no representa tablas confirmadas ni un diseño aprobado.
+## Venta
+- Id: identificador entero.
+- Date: fecha y hora de la operación.
+- ProductName: nombre del producto vendido.
+- Quantity: cantidad vendida.
+- UnitPrice: precio unitario aplicado.
 
-## Pendiente
-Adjuntar el diseño real de la base de datos, definir claves primarias y foráneas, restricciones, relaciones y reglas de integridad. Documentar también el motor de base de datos y el procedimiento de inicialización.
+El total de cada venta se calcula multiplicando cantidad por precio unitario.
+
+## Archivos
+- `data/products.json`
+- `data/sales.json`
+
+## Limitaciones y mejoras
+En esta versión, la venta conserva el nombre del producto como texto y no utiliza todavía una relación mediante clave foránea. Para una futura base de datos relacional se recomienda diseñar tablas de productos, ventas y detalles de venta, con sus claves y restricciones.
