@@ -1,23 +1,23 @@
 # Arquitectura del sistema
 
-## Información confirmada
-El README declara C# y .NET como tecnologías del proyecto y Visual Studio como entorno de desarrollo.
+## Tecnologías
+La versión inicial utiliza C# y .NET 8 en una aplicación de consola.
 
-## Descripción general
-La arquitectura detallada todavía debe verificarse con los archivos fuente del proyecto. No se afirma aquí que exista una arquitectura específica (por capas, MVC u otra) hasta revisar la solución real.
+## Organización
+- `Program.cs`: menú e interacción con el usuario.
+- `Models/Product.cs`: datos de productos.
+- `Models/Sale.cs`: datos de ventas.
+- `Services/Store.cs`: operaciones de inventario, registro de ventas y persistencia.
+- `data/`: archivos JSON locales generados durante la ejecución.
 
-## Componentes funcionales previstos
-- Gestión de usuarios y acceso.
-- Gestión de productos e inventario.
-- Registro de ventas e historial.
-- Gestión de clientes y proveedores.
-- Promociones, preventas y reportes.
+## Flujo básico
+1. El usuario selecciona una opción del menú.
+2. La aplicación valida los datos ingresados.
+3. El servicio actualiza productos o ventas.
+4. Los cambios se guardan en archivos JSON locales.
 
-## Información técnica pendiente
-- Versión exacta de .NET.
-- Tipo de aplicación (consola, escritorio, web u otra).
-- Motor y versión de base de datos.
-- Organización de proyectos, capas y dependencias.
-- Forma de configuración y ejecución.
+## Persistencia
+La versión inicial utiliza archivos JSON y no una base de datos SQL. Los archivos se crean en la carpeta `data/` al ejecutar el programa.
 
-Actualizar este documento después de revisar el archivo comprimido del código fuente.
+## Limitaciones
+No hay autenticación, control de roles, interfaz gráfica ni conexión a una base de datos servidor. La arquitectura podrá ampliarse cuando el equipo defina los siguientes módulos.
