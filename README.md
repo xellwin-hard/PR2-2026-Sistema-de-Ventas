@@ -2,70 +2,52 @@
 
 ## Sistema de Gestión de Ventas e Inventario
 
-NexCode Sales es un proyecto académico cuyo objetivo es desarrollar un sistema para apoyar la gestión de productos, inventario y ventas en pequeños y medianos negocios.
+NexCode Sales es un proyecto académico desarrollado en C# para apoyar la gestión básica de productos, inventario y ventas.
 
-El sistema busca centralizar el registro de productos, controlar existencias, registrar ventas y consultar el historial de operaciones.
+## Objetivo
+Permitir registrar productos, consultar existencias, registrar ventas y revisar el historial de operaciones desde una aplicación de consola.
 
-## Problema que aborda
-
-La gestión manual de productos, existencias y ventas puede dificultar el control de la información. El proyecto propone una herramienta que facilite estas tareas y permita consultar los datos de manera organizada.
-
-## Usuarios previstos
-
-- Personal administrador del negocio.
-- Personal encargado de registrar productos y ventas.
-- Personas responsables de consultar inventario e informes.
-
-Estos perfiles son preliminares y deben validarse durante el análisis.
-
-## Funcionalidades previstas
-
-- Inicio de sesión.
-- Gestión de productos.
-- Control de inventario.
-- Registro e historial de ventas.
-- Gestión de clientes y proveedores.
-- Promociones y preventas.
-- Reportes.
-
-> Las funciones anteriores representan el alcance previsto del proyecto. Su disponibilidad debe comprobarse en la versión actual del código.
-
-## Tecnologías declaradas
-
+## Tecnologías
 - C#
-- .NET
-- Visual Studio
+- .NET 8
+- Visual Studio 2022 o .NET SDK 8
 - Git y GitHub
+- Archivos JSON locales para guardar los datos de demostración
 
-La versión exacta de .NET, el motor de base de datos y los requisitos de ejecución están pendientes de confirmación mediante la revisión del código fuente.
+## Funciones disponibles en la versión inicial
+- Registrar productos con precio y cantidad inicial.
+- Consultar el inventario.
+- Registrar ventas.
+- Validar que exista stock suficiente antes de vender.
+- Descontar automáticamente el stock después de una venta.
+- Consultar historial y total de ventas.
+
+## Funciones todavía no implementadas
+Inicio de sesión, roles, clientes, proveedores, promociones, preventas, reportes avanzados y conexión a una base de datos SQL. Se mantienen como posibles ampliaciones del proyecto y no deben presentarse como terminadas.
 
 ## Equipo
-
 - Colque Mita German Wilfredo
 - Pozo Teran Axel Erwin
 - García Limachi Paola Andrea
 - Andreia Jarjury
 
-Las responsabilidades individuales se documentan en [Integrantes y roles](docs/equipo/integrantes-y-roles.md).
+Ver [integrantes y roles](docs/equipo/integrantes-y-roles.md).
 
-## Estructura del repositorio
-
+## Estructura
 ```text
 .
 ├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   └── pull_request_template.md
-├── docs/
-│   ├── equipo/
-│   ├── planificacion/
-│   ├── arquitectura.md
-│   ├── modelo-de-datos.md
-│   ├── requisitos.md
-│   └── vision-y-alcance.md
 ├── database/
+├── docs/
 ├── resources/
 ├── scripts/
 ├── src/
+│   └── NexCodeSales/
+│       ├── Models/
+│       ├── Services/
+│       ├── data/
+│       ├── NexCodeSales.csproj
+│       └── Program.cs
 ├── tests/
 ├── .editorconfig
 ├── .gitignore
@@ -75,33 +57,37 @@ Las responsabilidades individuales se documentan en [Integrantes y roles](docs/e
 └── SECURITY.md
 ```
 
-Las carpetas de código, pruebas, base de datos, recursos y scripts se preparan como espacios de organización. Su contenido debe completarse con los archivos reales del proyecto, sin inventar componentes.
+## Requisitos para ejecutar
+- .NET SDK 8.0 o superior.
+- Windows, Linux o macOS compatible con .NET 8.
+
+## Instalación y ejecución
+1. Instalar .NET SDK 8.
+2. Clonar o descargar el repositorio.
+3. Abrir una terminal en `src/NexCodeSales/`.
+4. Ejecutar:
+
+```bash
+dotnet restore
+dotnet run
+```
+
+Los datos se guardan localmente en archivos JSON dentro de `src/NexCodeSales/data/`.
 
 ## Documentación
-
 - [Visión y alcance](docs/vision-y-alcance.md)
-- [Requisitos del sistema](docs/requisitos.md)
+- [Requisitos](docs/requisitos.md)
 - [Arquitectura](docs/arquitectura.md)
 - [Modelo de datos](docs/modelo-de-datos.md)
 - [Planificación](docs/planificacion/planificacion.md)
 - [Integrantes y roles](docs/equipo/integrantes-y-roles.md)
 - [Acuerdos de trabajo](docs/equipo/acuerdos-de-trabajo.md)
-- [Guía para contribuir](CONTRIBUTING.md)
+- [Guía de contribución](CONTRIBUTING.md)
 - [Historial de cambios](CHANGELOG.md)
 - [Seguridad](SECURITY.md)
 
-## Preparación y ejecución
-
-Las instrucciones exactas de instalación y ejecución se incorporarán cuando se confirme la versión de .NET, el tipo de aplicación, sus dependencias y la configuración de base de datos. Mientras tanto, no se deben asumir comandos ni credenciales.
-
-## Estado del proyecto
-
-**En desarrollo.** La documentación inicial y los estándares del repositorio están en proceso de organización. Los módulos y las pruebas deben marcarse como terminados únicamente después de verificarlos en el código.
-
-## Contribuciones
-
-Consultar [CONTRIBUTING.md](CONTRIBUTING.md) para conocer los acuerdos de trabajo, commits y revisión de cambios.
+## Estado
+**Versión inicial en desarrollo.** Se implementó una aplicación de consola básica. Las pruebas formales, diagramas, Gantt y módulos adicionales deben agregarse y validarse por el equipo.
 
 ## Licencia
-
-Proyecto académico desarrollado con fines educativos. La licencia formal está pendiente de definición por el equipo.
+Proyecto académico para fines educativos. La licencia formal queda pendiente de decisión del equipo.
