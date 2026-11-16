@@ -105,6 +105,7 @@ Consulta el [índice de documentación](docs/README.md). Documentos principales:
 - [Arquitectura](docs/arquitectura.md).
 - [Modelo de datos](docs/modelo-de-datos.md).
 - [Planificación](docs/planificacion/planificacion.md).
+- [Cronograma Gantt](docs/planificacion/gantt.md).
 - [Seguimiento del proyecto](docs/planificacion/seguimiento.md).
 - [Diagramas](docs/diagramas/README.md).
 - [Manual de ejecución](docs/manuales/ejecucion.md).
@@ -121,4 +122,4 @@ Las tareas y problemas se gestionan mediante [GitHub Issues](https://github.com/
 
 ## Licencia
 
-La licencia de distribución está pendiente de decisión y aprobación del equipo.
+Consulta el archivo [LICENSE](LICENSE). El equipo debe confirmar esta condición de uso antes de distribuir el proyecto fuera del contexto académico.
