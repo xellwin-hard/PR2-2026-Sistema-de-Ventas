@@ -43,21 +43,27 @@ Se requiere un sistema operativo compatible con .NET 8.
 ```text
 .
 ├── .github/
+│   ├── CODEOWNERS
 │   ├── ISSUE_TEMPLATE/
+│   ├── pull_request_template.md
 │   └── workflows/
 ├── docs/
 │   ├── diagramas/
 │   ├── equipo/
 │   ├── manuales/
 │   └── planificacion/
+│       ├── planificacion.md
+│       ├── gantt.md
+│       └── seguimiento.md
 ├── src/
-│   └── NexCodeSales/
 ├── tests/
-│   └── NexCodeSales.Tests/
+├── database/
+├── scripts/
 ├── .editorconfig
 ├── .gitignore
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
+├── LICENSE
 ├── README.md
 └── SECURITY.md
 ```
