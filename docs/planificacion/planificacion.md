@@ -1,17 +1,28 @@
 # Planificación
 
 ## Organización del trabajo
-El equipo debe mantener las tareas en GitHub Issues y/o GitHub Projects, asignando responsable, prioridad y fecha objetivo.
+El equipo mantiene las tareas en [GitHub Issues](https://github.com/xellwin-hard/PR2-2026-Sistema-de-Ventas/issues) y en el tablero de [GitHub Projects](https://github.com/users/xellwin-hard/projects), asignando responsable, prioridad y fecha objetivo.
 
-## Etapas sugeridas
+## Etapas del proyecto
 1. Levantamiento y validación de requisitos.
-2. Diseño de arquitectura y base de datos.
+2. Diseño de arquitectura y modelo de datos.
 3. Implementación de módulos.
 4. Pruebas y corrección de errores.
 5. Documentación y preparación de entrega.
 
-## Seguimiento
-Registrar avances, bloqueos y cambios de alcance en el tablero del proyecto. Las fechas y responsables deben ser completados por el equipo según su cronograma académico.
+## Hitos, responsables y dependencias
+| Hito | Responsable | Dependencia |
+|---|---|---|
+| Requisitos validados | Equipo | Inicio del proyecto |
+| Diseño técnico definido | Equipo | Requisitos validados |
+| Funcionalidades implementadas | Equipo | Diseño técnico |
+| Pruebas ejecutadas | Equipo | Funcionalidades implementadas |
+| Documentación y entrega | Equipo | Pruebas y revisión |
 
-## Gantt
-El cronograma Gantt existente debe incorporarse aquí o enlazarse desde esta carpeta cuando se agregue al repositorio. No se inventan fechas en este documento.
+Los responsables individuales y las fechas deben ser confirmados por el equipo en el tablero y en el cronograma académico.
+
+## Diagrama de Gantt
+Consultar [gantt.md](gantt.md). El archivo contiene la estructura de fases; las fechas reales deben completarse con el cronograma aprobado por el equipo.
+
+## Seguimiento
+Registrar avances, bloqueos y cambios de alcance en GitHub Projects y Issues. Los estados del tablero son: Pendiente, En desarrollo, En revisión y Completado.
